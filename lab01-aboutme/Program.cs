@@ -58,6 +58,10 @@ namespace lab01_aboutme
                 Console.WriteLine("We don't like what you entered, and we don't have to tell you WHYYYYYY");
                 return q1Answer;
             }
+            finally
+            {
+                Console.WriteLine("A FINALLY just for fun and kicks");
+            }
         }
 
         //question two, asks the user for guess, determine if it is right or wrong, returns correct answer

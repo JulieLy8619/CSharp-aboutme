@@ -30,7 +30,7 @@ cd lab01-aboutme/
 open Program.cs and modify code
 ```
 
-This will get a copy of my repo on your local machine and allow you to drill into the code to modify it.
+This will get a copy of my repo on your local machine and allow one to drill into the code to modify it.
 
 ### Building
 
