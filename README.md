@@ -9,12 +9,14 @@ Note for self for timing:
 
 # About Me
 
-This is a simple program that asks 5 questions about me and takes in your guesses and tells you the correct answer.
-No one else would want to use this at this time because it was just an assignment to practice coding a few new topics (like TRY blocks)
+This is a simple Console Application program that asks 5 questions about me and takes in your guesses and tells you the correct answer.
+No one else would want to use this at this time because it was just an assignment to practice coding a few new topics (like returning different types and TRY blocks)
 
 ## Installing / Getting started
 
-<!--I'm not sure what to fill in here. Like that they need to install VS? Then open the SLN file? -->
+<!--Do I need to state they need to install VS? -->
+You will need Visual Studio 2017 (I used Communicty), you can install it at the following link if you need: 
+https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017
 
 When you run the program, it should auto prompt you a question and then it records your answer. It will then inform you of the correct answer regardless if you got it right or wrong. This will repeat 5 times in total.
 
@@ -27,10 +29,11 @@ There are no needed configurations.
 ```shell
 git clone https://github.com/JulieLy8619/lab01-aboutme.git
 cd lab01-aboutme/
-open Program.cs and modify code
 ```
 
-This will get a copy of my repo on your local machine and allow one to drill into the code to modify it.
+Then open Program.cs
+
+This will get a copy of my repo on one's local machine and allow one to drill into the code to modify it.
 
 ### Building
 
@@ -46,20 +49,30 @@ The current features of this program is that it will ask 5 questions and tell yo
 <!--if I get to stretch then I can add it calcs right and wrong answers-->
 
 This is what it should look like when you run the program:
+
+What it looks like when all answers are correct
+
 ![CorrectAnswers](./images/allGood.JPG)
+
+What it looks like when all answers are wrong
+
+
 ![WrongAnswers](./images/allWrong.JPG)
+
+An example of an exception
+
 ![anException](./images/exception.JPG)
 
-## Configuration
 <!--
+## Configuration
 Here you should write what are all of the configurations a user can enter when
 using the project.
 
-i dont think they need any configurations at this time
+i dont think they need any configurations at this time, I chose to omit this section at this time
 -->
 
 #### Argument 
-No arguments needed
+No arguments needed at this time
 
 ## Contributing
 
