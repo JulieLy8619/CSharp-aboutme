@@ -6,7 +6,18 @@ namespace lab01_aboutme
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            //calls methods for each question
         }
+
+        //question one, return int
+
+        //question two, return string
+
+        //question three, return boolean
+
+        //question four, return void
+
+        //question five, return string
     }
 }
