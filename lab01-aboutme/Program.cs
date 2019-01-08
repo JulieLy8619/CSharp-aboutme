@@ -55,8 +55,12 @@ namespace lab01_aboutme
             }
             catch (Exception)
             {
-                Console.WriteLine("We don't like what you entered, andt we dont have to tell you WHYYYYYY");
+                Console.WriteLine("We don't like what you entered, and we don't have to tell you WHYYYYYY");
                 return q1Answer;
+            }
+            finally
+            {
+                Console.WriteLine("A FINALLY just for fun and kicks");
             }
         }
 
