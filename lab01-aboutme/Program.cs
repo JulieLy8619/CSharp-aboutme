@@ -31,21 +31,36 @@ namespace lab01_aboutme
         }
 
         //question one, asks the user for guess, determine if it is right or wrong, returns correct answer
+        //add try block on this question: null? # too big? is it not a number? general exception
         private static int q1Siblings()
         {
             Console.WriteLine("How many siblings do I have?");
             string q1SiblingsGuess = Console.ReadLine();
-            int q1SiblingsGuessInt = Convert.ToInt32(q1SiblingsGuess);
             int q1Answer = 1;
-            if (q1SiblingsGuessInt != q1Answer)
+            try
             {
-                Console.WriteLine("Good guess");
+                int q1SiblingsGuessInt = Convert.ToInt32(q1SiblingsGuess);
+                if (q1SiblingsGuessInt != q1Answer)
+                {
+                    Console.WriteLine("Good guess");
+                    return q1Answer;
+                }
+                else
+                    return q1Answer;
+            }
+            catch (NullReferenceException) //i can't seem to get a null guess from the user
+            {
+                Console.WriteLine("You didn't make an entry");
                 return q1Answer;
-            } else 
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("We don't like what you entered, andt we dont have to tell you WHYYYYYY");
                 return q1Answer;
+            }
         }
 
-        //question two, return string
+        //question two, asks the user for guess, determine if it is right or wrong, returns correct answer
         private static string q2Color()
         {
             Console.WriteLine("What is my favorite color?");
@@ -61,7 +76,7 @@ namespace lab01_aboutme
                 return q2Answer;
         }
 
-        //question three, return boolean
+        //question three, asks the user for guess, determine if it is right or wrong, returns correct answer
         private static bool q3Foodie()
         {
             Console.WriteLine("True or false: I am a foodie");
@@ -77,7 +92,7 @@ namespace lab01_aboutme
                 return q3Answer;
         }
 
-        //question four, return int
+        //question four, asks the user for guess, determine if it is right or wrong, returns correct answer
         private static int q4FavNum()
         {
             Console.WriteLine("What is my favorite Number?");
@@ -92,7 +107,7 @@ namespace lab01_aboutme
                 return q4Answer;
         }
 
-        //question five, return string
+        //question five, asks the user for guess, determine if it is right or wrong, returns correct answer
         private static string q5Name()
         {
             Console.WriteLine("What is my current favorite name?");
