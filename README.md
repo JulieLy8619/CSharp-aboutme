@@ -45,6 +45,11 @@ No additional steps to deploy or publish this program at this time.
 The current features of this program is that it will ask 5 questions and tell you the answers. 
 <!--if I get to stretch then I can add it calcs right and wrong answers-->
 
+This is what it should look like when you run the program:
+![CorrectAnswers](./images/allGood.JPG)
+![WrongAnswers](./images/allWrong.JPG)
+![anException](./images/exception.JPG)
+
 ## Configuration
 <!--
 Here you should write what are all of the configurations a user can enter when
