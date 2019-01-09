@@ -6,6 +6,10 @@ namespace lab01_aboutme
     {
         static void Main(string[] args)
         {
+            //int rightCount = 0;
+            //int wrongCount = 0;
+            //I can't do count right and wrong because of how i set up my prog
+            //if I wanted to add count, then i would need to move my if's out to main
             //question 1
             int answerForQ1 = q1Siblings();
             Console.WriteLine($"The answer is {answerForQ1}");
@@ -26,6 +30,8 @@ namespace lab01_aboutme
             //question 5
             string answerForQ5 = q5Name();
             Console.WriteLine($"The answer is {answerForQ5}");
+
+            //Console.WriteLine($"You got {rightCount} right and missed {wrongCount}");
             Console.ReadLine(); // so it doesn't auto exit
 
         }
