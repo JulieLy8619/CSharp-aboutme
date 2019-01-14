@@ -6,10 +6,6 @@ namespace lab01_aboutme
     {
         static void Main(string[] args)
         {
-            //int rightCount = 0;
-            //int wrongCount = 0;
-            //I can't do count right and wrong because of how i set up my prog
-            //if I wanted to add count, then i would need to move my if's out to main
             //question 1
             int answerForQ1 = q1Siblings();
             Console.WriteLine($"The answer is {answerForQ1}");
@@ -73,64 +69,117 @@ namespace lab01_aboutme
         //question two, asks the user for guess, determine if it is right or wrong, returns correct answer
         private static string q2Color()
         {
-            Console.WriteLine("What is my favorite color?");
-            string q2ColorGuess = Console.ReadLine();
-            string q2ColorGuessCap = q2ColorGuess.ToUpper();
             string q2Answer = "PINK";
-            if (q2ColorGuessCap != q2Answer)
+            try
             {
-                Console.WriteLine("Good guess");
+                Console.WriteLine("What is my favorite color?");
+                string q2ColorGuess = Console.ReadLine();
+                string q2ColorGuessCap = q2ColorGuess.ToUpper();
+                if (q2ColorGuessCap != q2Answer)
+                {
+                    Console.WriteLine("Good guess");
+                    return q2Answer;
+                }
+                else
+                    return q2Answer;
+            }
+            catch (NullReferenceException) //i can't seem to get a null guess from the user
+            {
+                Console.WriteLine("You didn't make an entry");
                 return q2Answer;
             }
-            else
+            catch (Exception)
+            {
+                Console.WriteLine("We don't like what you entered, and we don't have to tell you WHYYYYYY");
                 return q2Answer;
+            }
         }
 
         //question three, asks the user for guess, determine if it is right or wrong, returns correct answer
         private static bool q3Foodie()
         {
-            Console.WriteLine("True or false: I am a foodie");
-            string q3FoodieGuess = Console.ReadLine();
-            bool q3FoodieGuessBool = Convert.ToBoolean(q3FoodieGuess);
             bool q3Answer = true;
-            if (q3FoodieGuessBool != q3Answer)
+            try
             {
-                Console.WriteLine("Good guess");
+                Console.WriteLine("True or false: I am a foodie");
+                string q3FoodieGuess = Console.ReadLine();
+                bool q3FoodieGuessBool = Convert.ToBoolean(q3FoodieGuess);
+                if (q3FoodieGuessBool != q3Answer)
+                {
+                    Console.WriteLine("Good guess");
+                    return q3Answer;
+                }
+                else
+                    return q3Answer;
+            }
+            catch (NullReferenceException) //i can't seem to get a null guess from the user
+            {
+                Console.WriteLine("You didn't make an entry");
                 return q3Answer;
             }
-            else
+            catch (Exception)
+            {
+                Console.WriteLine("We don't like what you entered, and we don't have to tell you WHYYYYYY");
                 return q3Answer;
+            }
         }
 
         //question four, asks the user for guess, determine if it is right or wrong, returns correct answer
         private static int q4FavNum()
         {
-            Console.WriteLine("What is my favorite Number?");
-            string q4FavNumGuess = Console.ReadLine();
-            int q4FavNumGuessInt = Convert.ToInt32(q4FavNumGuess);
             int q4Answer = 36;
-            if (q4FavNumGuessInt != q4Answer)
+            try
             {
-                Console.WriteLine("Good guess");
+                Console.WriteLine("What is my favorite Number?");
+                string q4FavNumGuess = Console.ReadLine();
+                int q4FavNumGuessInt = Convert.ToInt32(q4FavNumGuess);
+                if (q4FavNumGuessInt != q4Answer)
+                {
+                    Console.WriteLine("Good guess");
+                    return q4Answer;
+                }
+                else
+                    return q4Answer;
+            }
+            catch (NullReferenceException) //i can't seem to get a null guess from the user
+            {
+                Console.WriteLine("You didn't make an entry");
                 return q4Answer;
-            } else
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("We don't like what you entered, and we don't have to tell you WHYYYYYY");
                 return q4Answer;
+            }
         }
 
         //question five, asks the user for guess, determine if it is right or wrong, returns correct answer
         private static string q5Name()
         {
-            Console.WriteLine("What is my current favorite name?");
-            string q5NameGuess = Console.ReadLine();
-            string q5NameGuessCap = q5NameGuess.ToUpper();
             string q5Answer = "JASPER";
-            if (q5NameGuessCap != q5Answer)
+            try
             {
-                Console.WriteLine("Good guess");
+                Console.WriteLine("What is my current favorite name?");
+                string q5NameGuess = Console.ReadLine();
+                string q5NameGuessCap = q5NameGuess.ToUpper();
+                if (q5NameGuessCap != q5Answer)
+                {
+                    Console.WriteLine("Good guess");
+                    return q5Answer;
+                }
+                else
+                    return q5Answer;
+            }
+            catch (NullReferenceException) //i can't seem to get a null guess from the user
+            {
+                Console.WriteLine("You didn't make an entry");
                 return q5Answer;
             }
-            else
+            catch (Exception)
+            {
+                Console.WriteLine("We don't like what you entered, and we don't have to tell you WHYYYYYY");
                 return q5Answer;
+            }
         }
     }
 }
